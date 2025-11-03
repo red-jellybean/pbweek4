@@ -42,3 +42,23 @@ body {
             bottom: 0;
             width: 100%;
         }
+
+        .homeNav {
+            display: flex;
+            justify-content: center;   
+            gap: 2rem;                 
+            list-style: none;         
+            padding: 0;
+        }   
+
+        .homeNav li {
+            text-align: center;
+        }
+
+        .homeNav img {
+            display: block;
+            width: 150px;
+            height: auto;
+            margin-top: 0.5rem;
+            border-radius: 8px;
+        }
