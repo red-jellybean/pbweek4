@@ -1,0 +1,28 @@
+h1 {
+
+}
+
+.info {
+    
+}
+
+#userInput {
+
+display: flex;
+            justify-content: left;   
+            gap: 2rem;                 
+            list-style: none;         
+            padding: 0;
+        }   
+
+        #userInput li {
+            text-align: center;
+        }
+
+        #userInputInfo {
+            justify-content: left;
+        }
+
+        #userInputInfo {
+            justify-content: right;
+        }

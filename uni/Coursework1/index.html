@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Reservation</title>
+    <link rel="stylesheet" href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    <h1>Book A Room</h1>
+    <div>
+        <ul class="d-flex justify-content-evenly">
+        <li id="userInputInfo">
+            <div class="info">
+                <h2>Your Details</h2>
+                <form action="" method="post" class="info">
+                    <div class="info">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="userName" autocomplete="name" placeholder="Jane" required>
+                    </div>
+                    <div>
+                        <label for="surname">Surname:</label>
+                        <input for="text" name="surname" id="userSurname" autocomplete="name" placeholder="Johnson" required>
+                    </div>
+                    <div class="info">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="userEmail" autocomplete="email" placeholder="email@domain.com" required>
+                    </div>
+                    <div class="info">
+                        <label for="number">Number:</label>
+                        <input type="tel" name="number" id="userNumber" autocomplete="tel" placeholder="07123 456789" required>
+                    </div>
+                    <div class="info">
+                        <input type="button" value="Enter">
+                    </div>
+                </form>
+
+        <!--user's name, email, telephone number -- validation that all is correct-->
+            </div>
+        </li>
+        <li id="userInputPref">
+            <div class="pref">
+                <h2>Your Stay</h2>
+                <form action="" method="post" class="pref">
+                    <div>
+                        <label for="inDate">Check-in Date:</label>
+                        <input type="date" name="inDate" id="checkin" required>
+                    </div>
+                    <div>
+                        <label for="outDate">Check-out Date:</label>
+                        <input type="date" name="outDate" id="checkout" required>
+                    </div>
+                    <div>
+                        <label for="noRooms">Rooms:</label>
+                        <input type="number" name="noRooms" id="rooms" min="1" required>
+                    </div>
+                    <div>
+                        <label for="noGuest">Guests:</label>
+                        <input type="number" name="noGuest" id="guests" min="1" required>
+                    </div>
+                    <div>
+                        <label for="beds">Beds:</label>
+                        <input type="number" name="noBeds" id="beds" min="1" required> 
+                    </div>
+                    <div>
+                        <input type="button" value="Enter">
+                    </div>
+                </form>
+        <!--dates of stay, number of guests, number of + size of beds-->
+            </div>
+        </li>
+    </ul>
+    </div>
+    
+    
+
+    
+
+    <div class="info">
+        <h2>Room Availability</h2>
+
+        <!--check for availability the return details on room amenitites, room type, pricing-->
+    </div>
+
+</body>
+<footer>
+
+</footer>
+</html>
+
+<!--add a pop up being pushy asking for add ons (breakfast) -->
+<!--// Source - https://stackoverflow.com/a
+// Posted by Lahiru Jayakody, modified by community. See post 'Timeline' for change history
+// Retrieved 2025-11-17, License - CC BY-SA 4.0
+
+// below trick also works! Thanks jymbob for the comment.
+datePickerId.max = new Date().toLocaleDateString('fr-ca')
+or..
+// Source - https://stackoverflow.com/a
+// Posted by Lahiru Jayakody, modified by community. See post 'Timeline' for change history
+// Retrieved 2025-11-17, License - CC BY-SA 4.0
+
+datePickerId.max = new Date().toISOString().split("T")[0];
+
+to set the minimum date as the current date, preventing users from entering invalid dates
++ find how to question a stay that has been entered which is suspisciouly long-->
